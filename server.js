@@ -97,3 +97,4 @@ app.listen(PORT, () => {
     console.log(`🔐 Admin Portal: http://localhost:${PORT}/admin.html`);
     console.log(`=================================`);
 });
+module.exports = app;
