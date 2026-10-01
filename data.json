@@ -1,0 +1,37 @@
+{
+  "teachers": [
+    {
+      "id": 101,
+      "name": "أ. سارة جينكينز",
+      "status": "متاح"
+    },
+    {
+      "id": 102,
+      "name": "أ. ديفيد ميلر",
+      "status": "متاح"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "إنجليزية المحادثة للمبتدئين (A1-A2)",
+      "level": "Beginner",
+      "schedule": "الأحد والأربعاء - 18:00",
+      "price": "490 DH / شهرياً",
+      "seatsLeft": 5,
+      "assignedTeacherId": null,
+      "zoomLink": ""
+    },
+    {
+      "id": 2,
+      "title": "إعداد اختبار الأيلتس (IELTS Academic)",
+      "level": "Advanced",
+      "schedule": "الإثنين والخميس - 20:00",
+      "price": "690 DH / شهرياً",
+      "seatsLeft": 4,
+      "assignedTeacherId": null,
+      "zoomLink": ""
+    }
+  ],
+  "bookings": []
+}
