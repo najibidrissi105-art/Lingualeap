@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaLeap - احترف اللغة الإنجليزية بحرية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style> 
+        body { font-family: 'Cairo', sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #312e81 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <span class="text-3xl font-black tracking-tight text-indigo-600">Lingua<span class="text-amber-500">Leap</span></span>
+                <span class="text-[10px] bg-emerald-50 text-emerald-700 font-extrabold px-2.5 py-1 rounded-full border border-emerald-100">تجربة مجانية</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 space-x-reverse text-sm font-bold text-slate-600">
+                <a href="#trial" class="hover:text-indigo-600 transition">الحصة التجريبية</a>
+                <a href="#about" class="hover:text-indigo-600 transition">طريقة التعلم</a>
+                <a href="#groups" class="hover:text-indigo-600 transition">البرامج والباقات</a>
+                <a href="#faq" class="hover:text-indigo-600 transition">الأسئلة الشائعة</a>
+            </nav>
+            <div>
+                <a href="#trial" class="bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-black px-5 py-2.5 rounded-xl shadow-md transition-all">احجز حصة تجريبية</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 px-6 relative">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-block bg-indigo-500/20 text-amber-300 text-xs font-bold px-4 py-1.5 rounded-full border border-indigo-400/30 mb-6">
+                🎓 مجموعات مصغرة (6 طلاب كحد أقصى) أو دروس فردية 1-on-1
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black leading-tight">
+                تحدث الإنجليزية بثقة من خلال <span class="text-amber-400">التطبيق الحي المباشر</span>
+            </h1>
+            <p class="text-slate-300 mt-6 max-w-2xl mx-auto text-base md:text-lg">
+                اكتشف مستواك الحقيقي في الإنجليزية واحصل على تقييم شامل من أستاذك بعد حصة تجريبية مباشرة دون أي التزام مالي.
+            </p>
+
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#trial" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold px-8 py-3.5 rounded-xl text-sm shadow-xl transition transform hover:-translate-y-0.5">
+                    احجز حصتك التجريبية المجانية 🎯
+                </a>
+                <a href="#groups" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3.5 rounded-xl text-sm border border-white/20 transition">
+                    استكشف الباقات والمجموعات
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الحصة التجريبية والتقييم المجاني (أهم نموذج مستلهم) -->
+    <section id="trial" class="py-16 max-w-4xl mx-auto px-6 -mt-10 relative z-20">
+        <div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
+            <div class="text-center mb-8">
+                <span class="text-xs font-extrabold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-md">بدون بطاقة بنكية</span>
+                <h2 class="text-2xl font-extrabold text-slate-900 mt-2">احجز حصة تقييم وتحديد مستوى مجاناً</h2>
+                <p class="text-xs text-slate-500 mt-1">سيتواصل معك فريقنا لتحديد موعد الحصة عبر Zoom وإرسال تقرير بمستواك</p>
+            </div>
+
+            <form id="trialForm" class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-xs font-bold mb-1 text-slate-700">الاسم الكامل</label>
+                    <input type="text" id="trialName" required placeholder="مثال: كريم العلمي" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold mb-1 text-slate-700">رقم الواتساب / الهاتف</label>
+                    <input type="tel" id="trialPhone" required placeholder="06XXXXXXXX" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold mb-1 text-slate-700">تقديرك لمستواك الحالي</label>
+                    <select id="trialLevel" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-indigo-500 outline-none bg-white">
+                        <option value="مبتدئ جداً (A1)">مبتدئ جداً (A1)</option>
+                        <option value="متوسط (B1-B2)">متوسط (B1-B2)</option>
+                        <option value="متقدم (C1)">متقدم (C1)</option>
+                        <option value="غير تأكد">لست متأكداً</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold mb-1 text-slate-700">الهدف الأساسي من التعلم</label>
+                    <select id="trialTarget" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-indigo-500 outline-none bg-white">
+                        <option value="المحادثة السريعة والطلاقة">المحادثة السريعة والطلاقة</option>
+                        <option value="التطور المهني والعمل">التطور المهني والعمل</option>
+                        <option value="الدراسة والسفر">الدراسة والسفر</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2 mt-2">
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold py-3.5 rounded-xl text-xs shadow-lg transition">
+                        تأكيد طلب الحصة التجريبية المجانية ✨
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section / نموذج التعلم -->
+    <section id="about" class="py-16 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl border shadow-sm text-center">
+                <div class="text-3xl mb-3">👥</div>
+                <h3 class="font-bold text-slate-900 text-base mb-2">مجموعات مصغرة جداً</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">أقصى عدد هو 6 طلاب في المجموعة لضمان أن يتحدث الجميع ويمارس اللغة لمدة كافية خلال الحصة.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border shadow-sm text-center">
+                <div class="text-3xl mb-3">📄</div>
+                <h3 class="font-bold text-slate-900 text-base mb-2">تقرير تقييمي بعد الحصة</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">تتلقى تقريراً مكتوباً يحدد مستواك الدقيق في الإطار الأوروبي CEFR مع نقاط قوتك ونقاط التحسين.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border shadow-sm text-center">
+                <div class="text-3xl mb-3">🎯</div>
+                <h3 class="font-bold text-slate-900 text-base mb-2">توجيه ومتابعة شخصية</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">متابعة مستمرة من أستاذك مع خيار التدرج في المجموعات أو الانتقال للحصص الفردية.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs / المجموعات والباقات -->
+    <section id="groups" class="py-16 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-extrabold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-md">اختر المسار المناسب</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 mt-3">البرامج والباقات المتاحة</h2>
+        </div>
+
+        <div id="groupsContainer" class="grid md:grid-cols-3 gap-8">
+            <!-- تحميل المجموعات تلقائياً -->
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 max-w-4xl mx-auto px-6">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl font-extrabold text-slate-900">الأسئلة الشائعة</h2>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-white p-5 rounded-2xl border shadow-sm">
+                <h4 class="font-bold text-sm text-slate-900">هل الحصة التجريبية مجانية بالفعل؟</h4>
+                <p class="text-xs text-slate-600 mt-2">نعم، الحصة التجريبية واختبار تحديد المستوى مجانيان 100% وبدون الحاجة لتقديم أي بيانات دفع.</p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border shadow-sm">
+                <h4 class="font-bold text-sm text-slate-900">كم عدد الطلاب في المجموعة؟</h4>
+                <p class="text-xs text-slate-600 mt-2">الحد الأقصى هو 6 طلاب فقط للحرص على التفاعل الفردي والتطبيق.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 text-xs py-10 px-6 text-center border-t border-slate-800">
+        <p>جميع الحقوق محفوظة © 2026 LinguaLeap Inc.</p>
+    </footer>
+
+    <!-- Modal الحجز -->
+    <div id="bookingModal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-md hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white w-full max-w-md rounded-3xl p-6 shadow-2xl relative border">
+            <button onclick="closeModal()" class="absolute left-5 top-5 text-slate-400 hover:text-slate-600 font-bold">✕</button>
+            <h3 class="text-lg font-extrabold text-slate-900 mb-1">حجز البرنامج وإرفاق الوصل</h3>
+            <p id="modalGroupName" class="text-indigo-600 font-bold text-xs mb-4"></p>
+
+            <div class="bg-amber-50 p-3 rounded-xl mb-4 text-xs text-amber-950 space-y-1">
+                <p>البنك: <strong>CIH Bank</strong></p>
+                <p>RIB: <strong class="select-all font-mono">230 450 3928172611 00</strong></p>
+            </div>
+
+            <form id="groupBookingForm" class="space-y-3">
+                <input type="hidden" id="selectedGroupId">
+                <input type="text" id="studentName" required placeholder="الاسم الكامل" class="w-full px-3.5 py-2 rounded-xl border text-xs">
+                <input type="email" id="studentEmail" required placeholder="البريد الإلكتروني" class="w-full px-3.5 py-2 rounded-xl border text-xs">
+                <input type="tel" id="studentPhone" required placeholder="رقم الهاتف" class="w-full px-3.5 py-2 rounded-xl border text-xs">
+                <input type="file" id="receiptFile" accept="image/*" required class="w-full text-xs border rounded-xl p-2 bg-slate-50">
+                <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 rounded-xl text-xs mt-2">تأكيد التسجيل</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        async function loadGroups() {
+            const res = await fetch('/api/groups');
+            const groups = await res.json();
+            const container = document.getElementById('groupsContainer');
+            container.innerHTML = '';
+
+            groups.forEach(group => {
+                container.innerHTML += `
+                    <div class="bg-white border rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <span class="bg-indigo-50 text-indigo-700 text-[10px] font-extrabold px-3 py-1 rounded-full">${group.type}</span>
+                            <h3 class="text-lg font-bold text-slate-900 mt-3">${group.title}</h3>
+                            <p class="text-xs text-slate-500 mt-2">🎯 المستوى: ${group.level}</p>
+                            <p class="text-xs text-slate-500 mt-1">📅 المواعيد: ${group.schedule}</p>
+                            <p class="text-base font-black text-emerald-600 mt-3">${group.price}</p>
+                        </div>
+                        <button onclick="openBookingModal(${group.id}, '${group.title}')" class="w-full mt-6 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 rounded-xl text-xs transition">
+                            اشترك الآن
+                        </button>
+                    </div>
+                `;
+            });
+        }
+
+        // إرسال طلب الحصة التجريبية
+        document.getElementById('trialForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const payload = {
+                name: document.getElementById('trialName').value,
+                phone: document.getElementById('trialPhone').value,
+                level: document.getElementById('trialLevel').value,
+                target: document.getElementById('trialTarget').value
+            };
+
+            const res = await fetch('/api/trial', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            const data = await res.json();
+            if (data.success) {
+                alert('✨ ' + data.message);
+                document.getElementById('trialForm').reset();
+            }
+        });
+
+        function openBookingModal(groupId, groupTitle) {
+            document.getElementById('selectedGroupId').value = groupId;
+            document.getElementById('modalGroupName').textContent = groupTitle;
+            document.getElementById('bookingModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+        }
+
+        document.getElementById('groupBookingForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const file = document.getElementById('receiptFile').files[0];
+            const reader = new FileReader();
+            reader.onloadend = async () => {
+                const payload = {
+                    groupId: document.getElementById('selectedGroupId').value,
+                    name: document.getElementById('studentName').value,
+                    email: document.getElementById('studentEmail').value,
+                    phone: document.getElementById('studentPhone').value,
+                    paymentReceipt: reader.result
+                };
+                const res = await fetch('/api/groups/book', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await res.json();
+                if(result.success) {
+                    alert('تم إرسال حجزك بنجاح! رمز الحجز: ' + result.bookingId);
+                    closeModal();
+                }
+            };
+            reader.readAsDataURL(file);
+        });
+
+        loadGroups();
+    </script>
+</body>
+</html>
